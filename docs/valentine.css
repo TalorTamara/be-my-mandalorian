@@ -42,22 +42,22 @@ body {
 
 @keyframes intro-fly-away {
   0% {
-    transform: translate(-50%, -50%) scale(8); /* huge start */
+    transform: scale(6); /* huge start */
     opacity: 1;
   }
 
   40% {
-    transform: translate(-50%, -40%) scale(4); /* shrink & move up slightly */
+    transform: scale(3); /* shrink */
     opacity: 1;
   }
 
   50% {
-    transform: translate(-50%, -40%) scale(4); /* linger */
+    transform: scale(2); /* linger */
     opacity: 1;
   }
 
   100% {
-    transform: translate(-50%, -200%) scale(0.01); /* fly away into depth */
+    transform: scale(0.01); /* fly away into depth */
     opacity: 0.8;
   }
 }
