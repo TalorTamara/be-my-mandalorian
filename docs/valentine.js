@@ -24,7 +24,12 @@ playBtn.addEventListener("click", () => {
 
 // When intro animation ends → start crawl
 introTitle.addEventListener("animationend", () => {
-  crawl.classList.add("start-crawl");
+  // small pause after intro, optional
+  setTimeout(() => {
+    crawl.style.animationPlayState = "running"; // start crawl
+    crawl.style.display = "block"; // ensure it's visible
+  }, 500); // 0.5 second pause
+
   introTitle.remove();
 });
 
