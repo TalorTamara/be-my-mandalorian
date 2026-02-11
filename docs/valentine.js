@@ -25,10 +25,10 @@ playBtn.addEventListener("click", () => {
 // When intro animation ends → start crawl
 introTitle.addEventListener("animationend", () => {
   // small pause after intro, optional
-  setTimeout(() => {
-    crawl.style.animationPlayState = "running"; // start crawl
-    crawl.style.display = "block"; // ensure it's visible
-  }, -500); // 0.5 second pause
+  // setTimeout(() => {
+  //   crawl.style.animationPlayState = "running"; // start crawl
+  //   crawl.style.display = "block"; // ensure it's visible
+  // }, -500); // 0.5 second pause
 
   introTitle.remove();
 });
@@ -36,7 +36,7 @@ introTitle.addEventListener("animationend", () => {
 // Show question after crawl finishes
 setTimeout(() => {
   question.style.display = "block";
-}, 53500);
+}, 53000);
 
 // Crazy NO button
 noBtn.addEventListener("mouseenter", () => {
