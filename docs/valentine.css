@@ -77,7 +77,7 @@ body {
 
 #crawl {
   position: absolute;
-  bottom: -50%;
+  bottom: -50%; /* start off-screen */
   width: 60%;
   left: 20%;
   text-align: center;
@@ -85,12 +85,13 @@ body {
   line-height: 1.8;
   color: #ffaf00;
   transform: rotateX(30deg);
-  
-  /* IMPORTANT */
-  animation: crawl 120s linear forwards;
-  animation-play-state: paused; 
-  display: block; /*so it appears on screen*/
+
+  animation: crawl 120s linear forwards; /* slower */
+  animation-play-state: paused; /* start paused */
+  display: block; /* ensure visible */
+  z-index: 5; /* behind question but above background */
 }
+
 
 #crawl-text {
     font-family: 'UniversLTStd49LightUltraCondensed';
