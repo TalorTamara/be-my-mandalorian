@@ -28,7 +28,7 @@ introTitle.addEventListener("animationend", () => {
   setTimeout(() => {
     crawl.style.animationPlayState = "running"; // start crawl
     crawl.style.display = "block"; // ensure it's visible
-  }, 500); // 0.5 second pause
+  }, -500); // 0.5 second pause
 
   introTitle.remove();
 });
