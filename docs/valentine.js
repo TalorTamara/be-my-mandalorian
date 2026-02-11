@@ -36,7 +36,7 @@ introTitle.addEventListener("animationend", () => {
 // Show question after crawl finishes
 setTimeout(() => {
   question.style.display = "block";
-}, 53000);
+}, 55000);
 
 // Crazy NO button
 noBtn.addEventListener("mouseenter", () => {
