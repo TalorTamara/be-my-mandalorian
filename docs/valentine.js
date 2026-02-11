@@ -22,10 +22,6 @@ playBtn.addEventListener("click", () => {
   introTitle.style.animationPlayState = "running";
 });
 
-
-
-
-
 // When intro animation ends → start crawl
 introTitle.addEventListener("animationend", () => {
   crawl.classList.add("start-crawl");
@@ -35,7 +31,7 @@ introTitle.addEventListener("animationend", () => {
 // Show question after crawl finishes
 setTimeout(() => {
   question.style.display = "block";
-}, 53000);
+}, 55000);
 
 // Crazy NO button
 noBtn.addEventListener("mouseenter", () => {
@@ -53,7 +49,6 @@ noBtn.addEventListener("mouseenter", () => {
   noBtn.style.top = y + "px";
 });
 
-
 // sound effects
 
 const hoverSound = document.getElementById("hover-sound");
@@ -66,7 +61,6 @@ const cheersSound = document.getElementById("cheers-sound");
     hoverSound.play();
   });
 });
-
 
 // YES button click → confetti + cheers
 yesBtn.addEventListener("click", () => {
