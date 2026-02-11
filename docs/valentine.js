@@ -171,6 +171,6 @@ const startOverBtn = document.getElementById("start-over-btn");
 });
 
 startOverBtn.addEventListener("click", () => {
-  location.reload();
+  window.location.href = "index.html";
 });
 
