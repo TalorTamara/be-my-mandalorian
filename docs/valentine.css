@@ -24,7 +24,7 @@ body {
 #intro-title {
   position: absolute;
   top: 30%;
-  width: 80%;
+  width: 120%;
   font-family: 'STJEDISE';
      letter-spacing: 5px;
   text-align: center;
@@ -33,7 +33,7 @@ body {
   font-size: 75px;
   color: transparent;
   -webkit-text-stroke: 3px #ffaf00;
-  transform: scale(5);
+  transform: scale(3);
   animation: intro-fly-away 11s ease-out forwards;
   z-index: 1;
     animation-play-state: paused;
@@ -42,19 +42,19 @@ body {
 /* INTRO ANIMATION WITH MIDWAY PAUSE */
 @keyframes intro-fly-away {
   0% {
-    transform: scale(5);
+    transform: scale(3);
     opacity: 1;
   }
 
   /* Zoom in a little */
   40% {
-    transform: scale(4);
+    transform: scale(2);
     opacity: 1;
   }
 
   /* LINGER HERE */
   30% {
-    transform: scale(4);
+    transform: scale(2);
     opacity: 1;
   }
 
