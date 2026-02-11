@@ -33,7 +33,7 @@ body {
   font-size: 75px;
   color: transparent;
   -webkit-text-stroke: 3px #ffaf00;
-  transform: scale(3); /* start huge */
+  transform: scale(2); /* start huge */
   animation: intro-fly-away 12s ease-out forwards;
   z-index: 1;
   animation-play-state: paused;
@@ -42,17 +42,17 @@ body {
 /* INTRO ANIMATION WITH MIDWAY PAUSE */
 @keyframes intro-fly-away {
   0% {
-    transform: scale(2);  /* huge off-screen */
+    transform: scale(1.5);  /* huge off-screen */
     opacity: 1;
   }
 
   40% {
-    transform: scale(2);   /* shrink slightly, now fully readable */
+    transform: scale(1.5);   /* shrink slightly, now fully readable */
     opacity: 1;
   }
 
   50% {
-    transform: scale(2);   /* linger fully visible */
+    transform: scale(1.5);   /* linger fully visible */
     opacity: 1;
   }
 
