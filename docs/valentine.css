@@ -89,7 +89,7 @@ body {
   animation: crawl 90s linear forwards; /* slower */
   animation-play-state: paused; /* start paused */
   display: block; /* ensure visible */
-  z-index: 5; /* behind question but above background */
+  z-index: 7; /* behind question but above background */
 }
 
 
