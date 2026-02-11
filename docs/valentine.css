@@ -87,7 +87,7 @@ body {
   transform: rotateX(30deg);
   
   /* IMPORTANT */
-  animation: crawl 99s linear forwards;
+  animation: crawl 120s linear forwards;
   animation-play-state: paused; 
 }
 
