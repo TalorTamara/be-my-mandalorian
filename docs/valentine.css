@@ -89,6 +89,7 @@ body {
   /* IMPORTANT */
   animation: crawl 120s linear forwards;
   animation-play-state: paused; 
+  display: block; /*so it appears on screen*/
 }
 
 #crawl-text {
