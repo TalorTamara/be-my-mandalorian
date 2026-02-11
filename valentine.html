@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Be My Mandalorian</title>
+
+  <!-- Google Font similar to Star Wars -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+
+  <!--play button-->
+  <div id="play-screen">
+  <button id="play-btn">▶</button>
+</div>
+
+  <!-- Star Wars Theme -->
+<audio id="theme" src="assets/starwars.mp3" autoplay muted></audio>
+<audio id="hover-sound" src="assets/button.mp3"></audio>
+<audio id="cheers-sound" src="assets/yaysound.mp3"></audio>
+<audio id="saberHum" src="assets/saber-hum.mp3"></audio>
+
+<!--Yes button experience-->
+
+<div id="yes-screen">
+  <img src="assets/yes-button.jpg" alt="us together">
+  <div id="yes-text">This is the way!</div>
+  <button id="start-over-btn">Start Over</button>
+</div>
+
+
+   <!-- Darth Vader 'no' button' experience -->
+    <audio id="vader-theme" src="assets/darth-vader.mp3"></audio>
+
+<div id="darth-vader-screen">
+  <img src="assets/darth-vader-button.png" alt="Darth Vader">
+
+  <div id="try-again-wrapper">
+  <button id="try-again-btn">Try Again</button>
+</div>
+
+</div>
+
+  <!-- INTRO TITLE -->
+  <div id="intro-title">
+    star<br>
+    falls
+  </div>
+
+  <!-- CRAWL -->
+<div id="crawl-container">
+  <div id="crawl">
+    <div id="crawl-text">
+      <p>Episode X</p>
+      <p>The force of love</p>
+      <p>&nbsp;</p>
+<p class="story-text">
+  A long time ago in a galaxy far, far away...
+  A girl with big dreams wanted to take over Denmark.
+  But then she met a boy with even bigger dreams than hers,
+  and now they take over Sweden together. 
+  <br><br><br>
+  The girl has found a new hope, and she wants to ask the boy,
+  if he can use the Force of love, 
+  and hopefully he will agree,
+  for the question is....
+</p>
+    </div>
+  </div>
+</div>
+
+  <!-- QUESTION -->
+  <div id="question">
+    <h1>Justas, 
+      Will You Be<br>
+        My Mandalorian?</h1>
+
+   <div class="buttons">
+  <button id="yes">
+    <img src="assets/baby-yoda.png">
+    <span>YAY</span>
+  </button>
+
+  <button id="no">
+    <img src="assets/darth-vader.png">
+    <span>NAY</span>
+  </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="valentine.js"></script>
+</body>
+</html>
