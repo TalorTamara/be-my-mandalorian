@@ -23,45 +23,42 @@ body {
 /* INTRO TITLE */
 #intro-title {
   position: absolute;
-  top: 30%;
-  width: 120%;
+  top: 25%;        /* move it a little higher so bottom fits */
+  width: 100%;
   font-family: 'STJEDISE';
-     letter-spacing: 5px;
+  letter-spacing: 5px;
   text-align: center;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 75px;
   color: transparent;
   -webkit-text-stroke: 3px #ffaf00;
-  transform: scale(3);
-  animation: intro-fly-away 11s ease-out forwards;
+  transform: scale(4);   /* smaller initial scale so it fits */
+  animation: intro-fly-away 12s ease-out forwards;
   z-index: 1;
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* INTRO ANIMATION WITH MIDWAY PAUSE */
 @keyframes intro-fly-away {
   0% {
-    transform: scale(3);
+    transform: scale(4);  /* initial size */
     opacity: 1;
   }
 
-  /* Zoom in a little */
-  40% {
-    transform: scale(2);
-    opacity: 1;
-  }
-
-  /* LINGER HERE */
   30% {
-    transform: scale(2);
+    transform: scale(3.5); /* linger: slightly smaller */
     opacity: 1;
   }
 
-  /* Continue flying away */
+  60% {
+    transform: scale(2);  /* start flying away */
+    opacity: 1;
+  }
+
   100% {
-    transform: scale(0.01);
-    opacity: 80;
+    transform: scale(0.01); /* disappear */
+    opacity: 0.8;
   }
 }
 
