@@ -23,9 +23,9 @@ body {
 /* INTRO TITLE */
 #intro-title {
   position: absolute;
-  top: 50%; /* start roughly center */
+  top: 35%; /* start roughly center */
   left: 50%;
-  transform: translate(-50%, -50%) scale(8); /* center + start huge */
+  transform: scale(8);
   width: 100%;
   font-family: 'STJEDISE';
   letter-spacing: 5px;
@@ -42,7 +42,7 @@ body {
 
 @keyframes intro-fly-away {
   0% {
-    transform: scale(6); /* huge start */
+    transform: scale(4); /* huge start */
     opacity: 1;
   }
 
