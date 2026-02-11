@@ -23,9 +23,9 @@ body {
 /* INTRO TITLE */
 #intro-title {
   position: absolute;
-  top: 35%; /* start roughly center */
+  top: 50%; /* center vertically */
   left: 50%;
-  transform: scale(8);
+  transform: translate(-50%, -50%) scale(10); /* start super huge */
   width: 100%;
   font-family: 'STJEDISE';
   letter-spacing: 5px;
@@ -42,25 +42,26 @@ body {
 
 @keyframes intro-fly-away {
   0% {
-    transform: scale(4); /* huge start */
+    transform: translate(-50%, -50%) scale(10); /* huge start */
     opacity: 1;
   }
 
   40% {
-    transform: scale(3); /* shrink */
+    transform: translate(-50%, -50%) scale(5); /* shrink to fully fit */
     opacity: 1;
   }
 
   50% {
-    transform: scale(2); /* linger */
+    transform: translate(-50%, -50%) scale(5); /* linger */
     opacity: 1;
   }
 
   100% {
-    transform: scale(0.01); /* fly away into depth */
+    transform: translate(-50%, -50%) scale(0.01); /* shrink into depth */
     opacity: 0.8;
   }
 }
+
 
 
 /* CRAWL CAMERA */
