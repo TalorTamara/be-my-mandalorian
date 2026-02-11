@@ -23,7 +23,7 @@ body {
 /* INTRO TITLE */
 #intro-title {
   position: absolute;
-  top: 25%;        /* move it a little higher so bottom fits */
+  top: 30%; /* initial vertical offset */
   width: 100%;
   font-family: 'STJEDISE';
   letter-spacing: 5px;
@@ -33,7 +33,7 @@ body {
   font-size: 75px;
   color: transparent;
   -webkit-text-stroke: 3px #ffaf00;
-  transform: scale(4);   /* smaller initial scale so it fits */
+  transform: scale(12); /* start huge */
   animation: intro-fly-away 12s ease-out forwards;
   z-index: 1;
   animation-play-state: paused;
@@ -42,22 +42,22 @@ body {
 /* INTRO ANIMATION WITH MIDWAY PAUSE */
 @keyframes intro-fly-away {
   0% {
-    transform: scale(4);  /* initial size */
+    transform: scale(12);  /* huge off-screen */
     opacity: 1;
   }
 
-  30% {
-    transform: scale(3.5); /* linger: slightly smaller */
+  40% {
+    transform: scale(6);   /* shrink slightly, now fully readable */
     opacity: 1;
   }
 
-  60% {
-    transform: scale(2);  /* start flying away */
+  50% {
+    transform: scale(6);   /* linger fully visible */
     opacity: 1;
   }
 
   100% {
-    transform: scale(0.01); /* disappear */
+    transform: scale(0.01); /* fly away into depth */
     opacity: 0.8;
   }
 }
