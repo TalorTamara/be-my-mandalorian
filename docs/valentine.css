@@ -86,7 +86,7 @@ body {
   color: #ffaf00;
   transform: rotateX(30deg);
 
-  animation: crawl 100s linear forwards; /* slower */
+  animation: crawl 90s linear forwards; /* slower */
   animation-play-state: paused; /* start paused */
   display: block; /* ensure visible */
   z-index: 5; /* behind question but above background */
