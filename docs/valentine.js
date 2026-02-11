@@ -173,3 +173,13 @@ startOverBtn.addEventListener("click", () => {
   window.location.href = "index.html";
 });
 
+// hover sound on play button //
+const playBtn = document.getElementById("play-btn"); 
+
+playBtn.forEach(btn => {
+  btn.addEventListener("mouseenter", () => {
+    hoverSound.currentTime = 0; // rewind so it can replay fast
+    hoverSound.play();
+  });
+});
+
