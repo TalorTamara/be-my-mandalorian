@@ -88,8 +88,7 @@ body {
   
   /* IMPORTANT */
   animation: crawl 99s linear forwards;
-  animation-play-state: paused;
-    animation-play-state: running;
+  animation-play-state: paused; 
 }
 
 #crawl-text {
